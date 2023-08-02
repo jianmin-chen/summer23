@@ -1,0 +1,25 @@
+.container {
+    cursor: move;
+    margin-inline: -2.5rem;
+    padding: 1rem 2rem;
+    background: hsl(40, 35%, 76%);
+    position: relative;
+}
+
+.inner {
+    box-shadow: inset 0 0 40px 10px hsla(0, 0%, 0%, 0.8);
+    background: url(https://garden.bradwoods.io/images/noise.webp),
+        linear-gradient(
+            to bottm right,
+            hsla(0, 0%, 0%, 0) 40%,
+            hsla(0, 0%, 0%, 1)
+        );
+    mix-blend-mode: overlay;
+}
+
+.polaroid {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

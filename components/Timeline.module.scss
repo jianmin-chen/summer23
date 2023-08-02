@@ -1,0 +1,16 @@
+.timeline {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid saddlebrown;
+    position: relative;
+    height: 1px;
+
+    .dot {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        background-color: saddlebrown;
+        border-radius: 50%;
+        top: -4px;
+    }
+}
