@@ -1,12 +1,15 @@
 import Lyrics from "@/components/Lyrics";
-import PhotoAlbum from "@/components/PhotoAlbum";
 import Timeline from "@/components/Timeline";
 import figlet from "figlet";
 import PixelCanvas from "@/components/PixelCanvas";
 import { useResizeDetector } from "react-resize-detector";
 import ResizeContext from "@/components/ResizeContext";
+import { rotate } from "@/utils";
+import dynamic from "next/dynamic";
 
-const rotate = (min, max) => Math.random() * (max - min + 1) + min;
+const PhotoAlbum = dynamic(() => import("@/components/PhotoAlbum"), {
+    ssr: false
+});
 
 export default function Index({ name }) {
     const { width, height, ref } = useResizeDetector();
@@ -589,7 +592,21 @@ export default function Index({ name }) {
                                         about. i do plan on going. i just don't
                                         know if i want to go next year. i know
                                         where i want to go, or what i might want
-                                        to do otherwise.
+                                        to do otherwise. it's nice having
+                                        options, but not nice having other
+                                        people force you into one option or the
+                                        other, which is what i'm struggling with
+                                        right now.
+                                    </p>
+                                    <p>
+                                        i could take a gap year. i could check
+                                        out shopify's dev degree. i could apply
+                                        to colleges (cmu, uc berkeley, harvey
+                                        mudd, uwash, dartmouth are the ones that
+                                        have grown on me). i could just do
+                                        nothing and go backpacking. the moment i
+                                        figure out how to stop what's limiting
+                                        me is the moment i can start living.
                                     </p>
                                 </details>
                                 <details>
@@ -639,6 +656,10 @@ export default function Index({ name }) {
                                             as a bet
                                         </li>
                                         <li>roof hopping</li>
+                                        <li>
+                                            septum piercing. i want one but also
+                                            not really
+                                        </li>
                                     </ul>
                                 </details>
                             </section>
@@ -761,7 +782,7 @@ export default function Index({ name }) {
                         </section>
                         <section className="prose">
                             <h2>acknowledgements</h2>
-                            <p>i save the best for last.</p>
+                            <p>these. people. are. the. best.</p>
                             <p>
                                 <a
                                     href="https://cheru.dev/"
@@ -771,9 +792,10 @@ export default function Index({ name }) {
                                 </a>
                                 : thanks for listening to me. seriously. it
                                 means a lot. and please stop making fun of me
-                                for crushing on people. no, her name does not
-                                rhyme with tuesday. (i'm just joking. keep doing
-                                what you do.)
+                                for crushing on people. also, most things don't
+                                rhyme with tuesday, so i'm not sure how you came
+                                with that. (i'm just joking. keep doing what you
+                                do.)
                             </p>
                             <p>
                                 <a
@@ -803,11 +825,12 @@ export default function Index({ name }) {
                                 mitski recs too. 🤦) please continue. sahiti,
                                 you have a fucking amazing website! thanks for
                                 being so sweet and i'll definitely see you next
-                                year. arianna, i love being the mysterious
-                                cousin. (someone has yet to send me the link to
-                                the family tree.) i'll see you in pittsburgh
-                                probably! no need to go to pycon, i'll probably
-                                be doing a tour of pittsburgh anyways.
+                                year. (what happened to love island?) arianna, i
+                                love being the mysterious cousin. (someone has
+                                yet to send me the link to the family tree.)
+                                i'll see you in pittsburgh probably! no need to
+                                go to pycon, i'll probably be doing a tour of
+                                pittsburgh anyways. (also, can i call you ari?)
                             </p>
                             <p>
                                 sarthak: thanks for spotting me $20. i love my
@@ -820,32 +843,56 @@ export default function Index({ name }) {
                                     className="special">
                                     fuji on ink block
                                 </a>
-                                . the food there was fucking delicious.
+                                . the food there was fucking delicious and
+                                you're one of the most wack people i've met in a
+                                good way.
                             </p>
                             <p>
                                 deet: thanks for driving that subaru of yours.
                                 probably the first clean car i've even been in.
+                                i loved rides with the gang with the air
+                                conditioner on max, sunroof and windows all
+                                open, and heavy music. best valet dude ever! but
+                                you're also so much cooler than that, like i
+                                can't put shit into words.
                             </p>
-                            <p>thomas</p>
+                            <p>
+                                thomas: your car sucks, but you don't! i loved
+                                talking with you about everything and anything.
+                                your attitude on everything and the way you
+                                treat people is the model for how i want to
+                                navigate the world going forward. also, i loved
+                                your kale smoothies.
+                            </p>
                             <p>
                                 and thanks to everyone else, especially people i
                                 will not see again potentially for a long time:
-                                sam and belle. thanks kara. and holly:
+                                sam and belle. sam, zach, and holly: the three
+                                of you changed my life for the better. zach for
+                                starting hack club; sam for defining a model for
+                                hackathons that made me decide to stay in hack
+                                club after assemble (and, with ben, for letting
+                                me overstay my time at archiebald); and holly
+                                for reaching out of nowhere and working together
+                                on projects, even though i haven't always been
+                                responsive.
+                            </p>
+                            <p>
+                                belle: i think you're such a cool person and i'd
+                                like to get to know you more. let me know when
+                                we can hang out now that you're in the greater
+                                boston area?
+                            </p>
+                            <p>
+                                kara: thank you so much for driving me almost
+                                five hours to vermont so i could partake in
+                                outernet. new hampshire is so pretty and
+                                conversation with you was really enjoyable.
                             </p>
                             <p>
                                 and obviously: everyone else at hq. i didn't get
-                                to know all of you but maybe next summer? ian &
-                                alex (which one of you is ice spice again? i
-                                need to get a selfie), matt.{" "}
-                                <a
-                                    href="https://zachlatta.com/"
-                                    target="_blank"
-                                    className="special">
-                                    zach
-                                </a>
-                                , thank you so much for changing my life. i
-                                never took up your offer for lunch but maybe the
-                                next time i'm in vermont?
+                                to know all of you but maybe next summer if
+                                y'all are still around?
                             </p>
                             <p>
                                 my heart is hurting so much right now but in a
@@ -914,10 +961,25 @@ export default function Index({ name }) {
                             </a>
                             ,{" "}
                             <a
+                                href="https://www.rebeccashapass.com/"
+                                target="_blank"
+                                className="special">
+                                rebecca's website
+                            </a>
+                            ,{" "}
+                            <a
                                 href="https://tripessay.vercel.app"
                                 target="_blank"
                                 className="special">
-                                a past essay on solo trips
+                                a past personal essay on backpacking through dc
+                                and slc
+                            </a>
+                            ,{" "}
+                            <a
+                                href="https://amie.so/calendar"
+                                target="_blank"
+                                className="special">
+                                amie's calendar journey
                             </a>
                             , mbta ui decisions
                         </footer>

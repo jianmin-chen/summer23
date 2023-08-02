@@ -1,6 +1,5 @@
 import styles from "./Lyrics.module.scss";
-
-const rotate = (min, max) => Math.random() * (max - min + 1) + min;
+import { rotate } from "@/utils";
 
 export default function Lyrics({ lyrics, background, embed }) {
     return (

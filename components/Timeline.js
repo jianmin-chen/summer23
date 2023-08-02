@@ -153,19 +153,10 @@ const entries = {
             like an adult tonight. I mean, I was in a pub! I mean, it's not like
             I drank anything but still...
         </p>
-    )
+    ),
+    "06/29": <></>
 };
 
 export default function Timeline() {
-    return (
-        <div className={styles.timeline}>
-            {Object.keys(entries)
-                .sort((a, b) => {
-                    return Date(a) - Date(b);
-                })
-                .map((entry, idx) => (
-                    <div className={styles.dot} key={idx} />
-                ))}
-        </div>
-    );
+    return null;
 }
