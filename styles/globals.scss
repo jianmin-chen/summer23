@@ -1,6 +1,5 @@
-@font-face {
-    font-family: "Playfair 2.0";
-    src: url("../public/Playfair2.ttf") format("truetype");
+* {
+    box-sizing: border-box;
 }
 
 body,
@@ -23,6 +22,10 @@ a {
 
 iframe {
     border: 0;
+}
+
+img {
+    user-select: none;
 }
 
 footer {

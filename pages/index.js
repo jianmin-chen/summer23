@@ -1,11 +1,11 @@
 import Lyrics from "@/components/Lyrics";
 import Timeline from "@/components/Timeline";
 import figlet from "figlet";
-import PixelCanvas from "@/components/PixelCanvas";
 import { useResizeDetector } from "react-resize-detector";
 import ResizeContext from "@/components/ResizeContext";
 import { rotate } from "@/utils";
 import dynamic from "next/dynamic";
+import SignHere from "@/components/SignHere";
 
 const PhotoAlbum = dynamic(() => import("@/components/PhotoAlbum"), {
     ssr: false
@@ -203,6 +203,7 @@ export default function Index({ name }) {
                             />
                         }
                     />
+                    <SignHere side="left" />
                 </div>
                 <ResizeContext.Provider value={{ width, height }}>
                     <div style={{ color: "gray" }} ref={ref}>
@@ -301,8 +302,8 @@ export default function Index({ name }) {
                                 <h2>reading and listening and writing.</h2>
                                 <p>
                                     this summer, i didn't read as much, but i
-                                    did write, so that's a win-win. here's some
-                                    stuff i worked through.
+                                    did write, so that's a win of sorts. here's
+                                    some stuff i worked through.
                                 </p>
                                 <ul>
                                     <li>
@@ -346,14 +347,6 @@ export default function Index({ name }) {
                                             target="_blank"
                                             className="special">
                                             crying in h mart
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://www.goodreads.com/book/show/57945316-babel"
-                                            target="_blank"
-                                            className="special">
-                                            babel
                                         </a>
                                     </li>
                                     <li>
@@ -430,16 +423,16 @@ export default function Index({ name }) {
                                         in terms of gender: just about everyday
                                         i wake up and decide that i'd like to
                                         dress or act as if i'm part of one of
-                                        one of the two main binary genders.
-                                        sometimes it's for a specific person,
-                                        but mostly it's about what i feel
-                                        comfortable in that day. don't know if
-                                        this is of any significance currently.
+                                        the two main binary genders. sometimes
+                                        it's for a specific person, but mostly
+                                        it's about what i feel comfortable in
+                                        that day. don't know if this is of any
+                                        significance currently.
                                     </p>
                                     <p>
-                                        i've known i'm queer specifically since
-                                        i was 12 (although obviously there were
-                                        signs before), so it's interesting
+                                        i've known that i'm queer specifically
+                                        since i was 12 (although obviously there
+                                        were signs before), so it's interesting
                                         seeing how that can change over time.
                                     </p>
                                 </details>
@@ -602,11 +595,12 @@ export default function Index({ name }) {
                                         i could take a gap year. i could check
                                         out shopify's dev degree. i could apply
                                         to colleges (cmu, uc berkeley, harvey
-                                        mudd, uwash, dartmouth are the ones that
-                                        have grown on me). i could just do
-                                        nothing and go backpacking. the moment i
-                                        figure out how to stop what's limiting
-                                        me is the moment i can start living.
+                                        mudd, uwash, dartmouth, brown, and umich
+                                        ann arbor are the ones that have grown
+                                        on me). i could just do nothing and go
+                                        backpacking. the moment i figure out how
+                                        to stop what's limiting me is the moment
+                                        i can start living.
                                     </p>
                                 </details>
                                 <details>
@@ -623,7 +617,8 @@ export default function Index({ name }) {
                                         <li>
                                             i think my day is shit. then i look
                                             at mbta and realize how things could
-                                            be so much worse
+                                            be so much worse. mbta is my spirit
+                                            entity!
                                         </li>
                                         <li>
                                             cities are hubs of hedonism but i'm
@@ -659,6 +654,14 @@ export default function Index({ name }) {
                                         <li>
                                             septum piercing. i want one but also
                                             not really
+                                        </li>
+                                        <li>
+                                            artists on a tote bag: taylor swift,
+                                            conan gray, gracie abrams, dominic
+                                            fike, pale waves, baby queen, lorde,
+                                            nf, the chainsmokers, reneé rapp,
+                                            fletcher, the last dinner party,
+                                            charli xcx, eden (in that order)
                                         </li>
                                     </ul>
                                 </details>
@@ -705,8 +708,10 @@ export default function Index({ name }) {
                             </audio>
                             */}
                             <p>
-                                that attempt is coming soon, but here's the
-                                lyrics for your scruntization:
+                                that attempt is coming soon, but here's a set of
+                                lyrics from my entire collection of demos (it
+                                turns out that writing lyrics on public
+                                transportation is easy):
                             </p>
                         </div>
                         <section>
@@ -833,10 +838,16 @@ export default function Index({ name }) {
                                 pittsburgh anyways. (also, can i call you ari?)
                             </p>
                             <p>
-                                sarthak: thanks for spotting me $20. i love my
-                                fucking jorts. (is that what they're called?
-                                that's what they're called.) and obviously for
-                                spotting the tab at{" "}
+                                <a
+                                    href="https://srtk.me/"
+                                    target="_blank"
+                                    className="special">
+                                    sarthak
+                                </a>
+                                : thanks for spotting me $20. i love my fucking
+                                jorts. (is that what they're called? that's what
+                                they're called.) and obviously for spotting the
+                                tab at{" "}
                                 <a
                                     href="https://www.fujiatinkblock.com/"
                                     target="_blank"
@@ -857,37 +868,100 @@ export default function Index({ name }) {
                                 can't put shit into words.
                             </p>
                             <p>
-                                thomas: your car sucks, but you don't! i loved
-                                talking with you about everything and anything.
-                                your attitude on everything and the way you
-                                treat people is the model for how i want to
-                                navigate the world going forward. also, i loved
-                                your kale smoothies.
+                                <a
+                                    href="https://github.com/SerenityUX"
+                                    target="_blank"
+                                    className="special">
+                                    thomas
+                                </a>
+                                : your car sucks, but you don't! i loved talking
+                                with you about everything and anything. your
+                                attitude on everything and the way you treat
+                                people is the model for how i want to navigate
+                                the world going forward. also, i loved your kale
+                                smoothies.
                             </p>
                             <p>
                                 and thanks to everyone else, especially people i
                                 will not see again potentially for a long time:
-                                sam and belle. sam, zach, and holly: the three
-                                of you changed my life for the better. zach for
-                                starting hack club; sam for defining a model for
-                                hackathons that made me decide to stay in hack
-                                club after assemble (and, with ben, for letting
-                                me overstay my time at archiebald); and holly
-                                for reaching out of nowhere and working together
-                                on projects, even though i haven't always been
-                                responsive.
+                                sam and belle.{" "}
+                                <a
+                                    href="https://sampoder.com/"
+                                    target="_blank"
+                                    className="special">
+                                    sam
+                                </a>
+                                ,{" "}
+                                <a
+                                    href="https://zachlatta.com/"
+                                    target="_blank"
+                                    className="special">
+                                    zach
+                                </a>
+                                , and{" "}
+                                <a
+                                    href="https://bookshelf.website/hollydelisle"
+                                    target="_blank"
+                                    className="special">
+                                    holly
+                                </a>
+                                : the three of you changed my life for the
+                                better. zach for starting{" "}
+                                <a
+                                    href="https://hackclub.com/"
+                                    target="_blank"
+                                    className="special">
+                                    hack club
+                                </a>
+                                ; sam for defining a model for hackathons that
+                                made me decide to stay in hack club after{" "}
+                                <a
+                                    href="https://www.jianminchen.com/article/general/2022-08-16-summer"
+                                    target="_blank"
+                                    className="special">
+                                    assemble
+                                </a>{" "}
+                                (and, with{" "}
+                                <a
+                                    href="https://malted.dev/"
+                                    target="_blank"
+                                    className="special">
+                                    ben
+                                </a>
+                                , for letting me overstay my time at
+                                archiebald); and holly for reaching out of
+                                nowhere and working together on projects, even
+                                though i haven't always been responsive.
                             </p>
                             <p>
-                                belle: i think you're such a cool person and i'd
-                                like to get to know you more. let me know when
-                                we can hang out now that you're in the greater
-                                boston area?
+                                <a
+                                    href="https://twitter.com/bellecsee"
+                                    target="_blank"
+                                    className="special">
+                                    belle
+                                </a>
+                                : i think you're such a cool person and i'd like
+                                to get to know you more. let me know when we can
+                                hang out now that you're in the greater boston
+                                area?
                             </p>
                             <p>
-                                kara: thank you so much for driving me almost
-                                five hours to vermont so i could partake in
-                                outernet. new hampshire is so pretty and
-                                conversation with you was really enjoyable.
+                                <a
+                                    href="https://github.com/karamassie"
+                                    target="_blank"
+                                    className="special">
+                                    kara
+                                </a>
+                                : thank you so much for driving me almost five
+                                hours to vermont so i could partake in{" "}
+                                <a
+                                    href="https://outernet.hackclub.com/"
+                                    target="_blank"
+                                    className="special">
+                                    outernet
+                                </a>
+                                . new hampshire is so pretty and conversation
+                                with you was really enjoyable.
                             </p>
                             <p>
                                 and obviously: everyone else at hq. i didn't get
@@ -896,8 +970,8 @@ export default function Index({ name }) {
                             </p>
                             <p>
                                 my heart is hurting so much right now but in a
-                                good way. it's 6am in the morning and i'm
-                                finally wrapping this up.
+                                good way. it's 6pm the next day and i'm finally
+                                wrapping this up.
                             </p>
                             <p>
                                 but before i go, to you, the reader: i love you.
@@ -916,7 +990,6 @@ export default function Index({ name }) {
                                 (yes, creative creation is a sign that you're
                                 human. and i would like to talk to humans.)
                             </p>
-                            <PixelCanvas />
                         </section>
                         <footer className="prose">
                             made with{" "}
@@ -932,6 +1005,13 @@ export default function Index({ name }) {
                                 target="_blank"
                                 className="special">
                                 figlet
+                            </a>
+                            ,{" "}
+                            <a
+                                href="https://www.framer.com/motion/"
+                                target="_blank"
+                                className="special">
+                                framer motion
                             </a>
                             , and ❤️. fonts:{" "}
                             <a
@@ -951,13 +1031,21 @@ export default function Index({ name }) {
                                 className="special">
                                 inter
                             </a>
-                            . hours it took to make: an all-nighter.
+                            . hours it took to make: an all-nighter + a few
+                            hours next to memorial drive next to mit.
                             inspiration:{" "}
                             <a
                                 href="https://kognise.dev"
                                 target="_blank"
                                 className="special">
                                 lexi's website
+                            </a>
+                            ,{" "}
+                            <a
+                                href="https://lachlanjc.com/"
+                                target="_blank"
+                                className="special">
+                                lachlan's website
                             </a>
                             ,{" "}
                             <a
@@ -1190,6 +1278,7 @@ export default function Index({ name }) {
                             />
                         }
                     />
+                    <SignHere side="right" />
                 </div>
             </div>
         </div>

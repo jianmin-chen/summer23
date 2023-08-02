@@ -1,0 +1,28 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.modal {
+    background: url(https://garden.bradwoods.io/images/noise.webp),
+        linear-gradient(
+            to bottm right,
+            hsla(0, 0%, 0%, 0) 40%,
+            hsla(0, 0%, 0%, 1)
+        );
+    background: hsl(40, 35%, 76%);
+    border-radius: 14px;
+    width: 100vw;
+    max-height: 80vh;
+
+    img {
+        max-width: 25%;
+    }
+}

@@ -9,9 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@visx/group": "^3.3.0",
-    "@visx/heatmap": "^3.3.0",
-    "@visx/scale": "^3.3.0",
     "figlet": "^1.6.0",
     "framer-motion": "^10.15.0",
     "next": "13.4.12",
