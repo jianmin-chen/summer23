@@ -5,8 +5,6 @@ import { rotate, random } from '@/utils'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
-// I know how to make this more
-
 const defaultPhotos = new Array(62).fill(0)
 
 export function Album({ photos, options, setModal }) {

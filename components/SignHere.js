@@ -27,33 +27,31 @@ export default function SignHere({ side }) {
       }
 
       const draw = event => {
-        let { x, y, color, type } = mouseRef.current
-
         // Mouse left button must be pressed
         if (event.buttons !== 1) return
 
         ctx.beginPath()
         ctx.lineWidth = 5
         ctx.lineCap = 'round'
-        ctx.strokeStyle = color
+        ctx.strokeStyle = mouseRef.current.color
 
-        ctx.moveTo(x, y)
+        ctx.moveTo(mouseRef.current.x, mouseRef.current.y)
         setPosition(event)
-        ctx.lineTo(x, y)
+        ctx.lineTo(mouseRef.current.x, mouseRef.current.y)
 
         ctx.stroke()
       }
 
       window.addEventListener('resize', resize)
-      document.addEventListener('mousemove', draw)
-      document.addEventListener('mousedown', setPosition)
-      document.addEventListener('mouseenter', setPosition)
+      canvas.addEventListener('mousemove', draw)
+      canvas.addEventListener('mousedown', setPosition)
+      canvas.addEventListener('mouseenter', setPosition)
 
       return () => {
         window.removeEventListener('resize', resize)
-        document.removeEventListener('mousemove', draw)
-        document.removeEventListener('mousedown', setPosition)
-        document.removeEventListener('mouseenter', setPosition)
+        canvas.removeEventListener('mousemove', draw)
+        canvas.removeEventListener('mousedown', setPosition)
+        canvas.removeEventListener('mouseenter', setPosition)
       }
     }
   }, [])

@@ -1,15 +1,17 @@
 .wrapper {
-    overflow: auto;
-    font-family: var(--font-sans);
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-weight: 600;
-    letter-spacing: -0.5px;
-    padding: 1rem;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  padding: 1rem;
+  border-radius: 15px;
+  position: relative;
+  z-index: 999;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .content {
-    mix-blend-mode: soft-light;
+  mix-blend-mode: soft-light;
 }

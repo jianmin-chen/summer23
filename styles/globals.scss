@@ -20,6 +20,10 @@ a {
   text-decoration-style: dotted;
 }
 
+code {
+  font-size: 95%;
+}
+
 iframe {
   border: 0;
 }
@@ -36,6 +40,14 @@ footer {
 h2 {
   font-family: var(--font-heading);
   border-bottom: 1px solid gray;
+}
+
+.special-reverse {
+  &:hover {
+    background-color: #ccd;
+  }
+
+  transition: background-color 0.1s;
 }
 
 .special {
@@ -135,5 +147,6 @@ h2 {
 
   > div:nth-child(2) {
     flex: 2;
+    max-width: 50vw;
   }
 }

@@ -1,5 +1,4 @@
 import Lyrics from '@/components/Lyrics'
-import Timeline from '@/components/Timeline'
 import figlet from 'figlet'
 import { useResizeDetector } from 'react-resize-detector'
 import ResizeContext from '@/components/ResizeContext'
@@ -8,6 +7,10 @@ import dynamic from 'next/dynamic'
 import SignHere from '@/components/SignHere'
 
 const PhotoAlbum = dynamic(() => import('@/components/PhotoAlbum'), {
+  ssr: false
+})
+
+const Timeline = dynamic(() => import('@/components/Timeline'), {
   ssr: false
 })
 
@@ -214,6 +217,10 @@ export default function Index({ name }) {
                 i talk more about music & art later, so it's important to me.
               </a>
             </p>
+            <p>
+              some design decisions are intentional, given purposeful and/or
+              time constraints.
+            </p>
             <header className="paper">
               <pre id="heading">
                 <a href="https://jianminchen.com" target="_blank">
@@ -223,7 +230,8 @@ export default function Index({ name }) {
             </header>
             <div className="prose" style={{ paddingTop: '0 !important' }}>
               <p style={{ marginTop: 0 }}>
-                this is a series of reflections on a summer almost gone.{' '}
+                this is a series of reflections on a summer almost gone, a
+                summer that's been life-changing in so many fucking ways.{' '}
                 <a href="#connection-to-art" className="special">
                   mostly, this is a manifestation of my realization that what i
                   do is art
@@ -799,7 +807,13 @@ export default function Index({ name }) {
             </section>
             <section className="prose">
               <h2>acknowledgements</h2>
-              <p>these. people. are. the. best.</p>
+              <p>
+                i saved acknowledgements for last because without these people,
+                everything that happened this summer...{' '}
+                <b>
+                  well, wouldn't have happened. thanks for all the magic y'all.
+                </b>
+              </p>
               <p>
                 <a
                   href="https://cheru.dev/"
@@ -1025,7 +1039,7 @@ export default function Index({ name }) {
                 className="special">
                 ibm plex sans
               </a>
-              . hours it took to make: an all-nighter + a few hours next to
+              . hours it took to make: an all-nighter + a half-day next to
               memorial drive next to mit & the{' '}
               <a
                 href="https://libraries.mit.edu/hayden/"
