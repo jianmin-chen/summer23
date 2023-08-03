@@ -1,139 +1,139 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body,
 html {
-    background: url("../public/paper.png");
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: "Playfair 2", serif;
-    margin: 0;
-    overflow-x: hidden;
-    padding: 0;
-    height: 100%;
-    scroll-behavior: smooth;
+  background: url('../public/paper.png');
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Playfair 2', serif;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
 a {
-    color: inherit;
-    text-decoration-style: dotted;
+  color: inherit;
+  text-decoration-style: dotted;
 }
 
 iframe {
-    border: 0;
+  border: 0;
 }
 
 img {
-    user-select: none;
+  user-select: none;
 }
 
 footer {
-    background-color: #cecece;
-    padding: 1rem;
+  background-color: #cecece;
+  padding: 1rem;
 }
 
 h2 {
-    font-family: var(--font-heading);
-    border-bottom: 1px solid gray;
+  font-family: var(--font-heading);
+  border-bottom: 1px solid gray;
 }
 
 .special {
-    background-color: #ccd;
+  background-color: #ccd;
 
-    &:hover {
-        background-color: transparent;
-    }
+  &:hover {
+    background-color: transparent;
+  }
 
-    transition: background-color 0.1s;
+  transition: background-color 0.1s;
 }
 
 .paper {
-    padding: 1rem 2rem;
-    color: gray;
+  padding: 1rem 2rem;
+  color: gray;
 }
 
 #heading {
-    text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(
-        90deg,
-        rgba(255, 0, 0, 1) 0%,
-        rgba(255, 154, 0, 1) 10%,
-        rgba(208, 222, 33, 1) 20%,
-        rgba(79, 220, 74, 1) 30%,
-        rgba(63, 218, 216, 1) 40%,
-        rgba(47, 201, 226, 1) 50%,
-        rgba(28, 127, 238, 1) 60%,
-        rgba(95, 21, 242, 1) 70%,
-        rgba(186, 12, 248, 1) 80%,
-        rgba(251, 7, 217, 1) 90%,
-        rgba(255, 0, 0, 1) 100%
-    );
-    -webkit-background-clip: text;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  -webkit-background-clip: text;
 }
 
 .prose {
-    font-family: var(--font-serif);
-    font-size: 1.5rem;
-    line-height: 1.5;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  line-height: 1.5;
 
-    blockquote {
-        border-left: 3px solid gray;
-        padding-left: 1rem;
-    }
+  blockquote {
+    border-left: 3px solid gray;
+    padding-left: 1rem;
+  }
 
-    details {
-        summary > h3 {
-            display: inline;
-        }
+  details {
+    summary > h3 {
+      display: inline;
     }
+  }
 }
 
 .looseleaf {
-    background-color: #e6e5ac;
-    color: black;
+  background-color: #e6e5ac;
+  color: black;
 
-    p,
-    span {
-        border-left: 1px solid red;
-        border-bottom: 1px solid #09f;
-        display: block;
-        margin: 0;
-        padding: 0rem 0.5rem 0 0.5rem;
-        width: 100%;
-    }
+  p,
+  span {
+    border-left: 1px solid red;
+    border-bottom: 1px solid #09f;
+    display: block;
+    margin: 0;
+    padding: 0rem 0.5rem 0 0.5rem;
+    width: 100%;
+  }
 
-    span {
-        height: 2rem;
-    }
+  span {
+    height: 2rem;
+  }
 }
 
 #flex {
-    align-items: flex-start;
+  align-items: flex-start;
+  display: flex;
+
+  > div {
+    flex: 1;
+  }
+
+  > div:nth-child(1) {
+    margin: 0.2rem 2rem 0.5rem 0;
+  }
+
+  > div:nth-child(2) {
+    margin: 0.2rem 0.5rem 2rem 0;
+  }
+
+  > div:not(:nth-child(2)) {
     display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
 
-    > div {
-        flex: 1;
-    }
-
-    > div:nth-child(1) {
-        margin: 0.2rem 2rem 0.5rem 0;
-    }
-
-    > div:nth-child(2) {
-        margin: 0.2rem 0.5rem 2rem 0;
-    }
-
-    > div:not(:nth-child(2)) {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-    }
-
-    > div:nth-child(2) {
-        flex: 2;
-    }
+  > div:nth-child(2) {
+    flex: 2;
+  }
 }

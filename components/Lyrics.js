@@ -1,5 +1,5 @@
 import styles from "./Lyrics.module.scss";
-import { rotate } from "@/utils";
+import { rotate } from "@/utils.js";
 
 export default function Lyrics({ lyrics, background, embed }) {
     return (

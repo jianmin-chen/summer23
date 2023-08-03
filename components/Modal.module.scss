@@ -21,6 +21,11 @@
     border-radius: 14px;
     width: 100vw;
     max-height: 80vh;
+    display: flex;
+
+    > div:nth-child(2) {
+        flex: 1;
+    }
 
     img {
         max-width: 25%;

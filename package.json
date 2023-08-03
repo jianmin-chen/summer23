@@ -1,22 +1,23 @@
 {
-  "name": "summer23",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "figlet": "^1.6.0",
-    "framer-motion": "^10.15.0",
-    "next": "13.4.12",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-resize-detector": "^9.1.0"
-  },
-  "devDependencies": {
-    "sass": "^1.64.2"
-  }
+    "name": "summer23",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "figlet": "^1.6.0",
+        "framer-motion": "^10.15.0",
+        "next": "13.4.12",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-resize-detector": "^9.1.0"
+    },
+    "devDependencies": {
+        "prettier": "^3.0.0",
+        "sass": "^1.64.2"
+    }
 }

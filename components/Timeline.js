@@ -417,7 +417,20 @@ const entries = {
         )
     },
     "07/10": {
-        content: 
+        content: (
+            <>
+                <p>(Written on 07/12)</p>
+                <p>
+                    First day of BWSI! Sat in the auditorium for way too much. I
+                    fell asleep during Jane Abbott's lecture, but I got away.
+                    Also got lost around MIT around 15 times, so doing super
+                    great. Also lots of merch. That's it.
+                </p>
+            </>
+        )
+    },
+    "07/11": {
+        content: ""
     }
 };
 
