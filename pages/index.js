@@ -653,6 +653,10 @@ export default function Index({ name, signs }) {
                       is so much fun
                     </li>
                     <li>
+                      i ain't never met a art student who wasn't anything but
+                      gorgeous
+                    </li>
+                    <li>
                       the{' '}
                       <a
                         href="https://youtu.be/75-aXY2ESy0"
