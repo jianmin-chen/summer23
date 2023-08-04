@@ -262,25 +262,6 @@ export default function Index({ name, signs }) {
                 (although: there is more than one; this is the main one) and
                 thinking about a summer almost gone.
               </p>
-              <p>
-                but first: if we're all separated by{' '}
-                <a
-                  className="special"
-                  href="https://en.wikipedia.org/wiki/Six_degrees_of_separation"
-                  target="_blank">
-                  six degrees of separation
-                </a>
-                , i want to get to know you, because somewhere in{' '}
-                <a
-                  href="https://en.wikipedia.org/wiki/Everything_Everywhere_All_at_Once"
-                  target="_blank"
-                  className="special">
-                  another dimension
-                </a>{' '}
-                i promise you that we’re platonic or romantic soulmates, if we
-                aren't in this one. so tell me about you. what’d you do this
-                summer?
-              </p>
               <PhotoAlbum />
               <p style={{ fontWeight: 700 }}>
                 please share photos of me/with me that you might have! trying to
@@ -288,11 +269,11 @@ export default function Index({ name, signs }) {
                 so bad.
               </p>
               <p>
-                thanks for sharing. in reciprocity, here's mine. i wrote these
-                words almost everyday (although it fell off considerably towards
-                the end), and i'm glad i did, because it made me realize how
-                exciting my life had become. as a kid, my parents forced me to
-                keep a diary, but i never had anything to write about.{' '}
+                i wrote these words almost everyday (although it fell off
+                considerably towards the end), and i'm glad i did, because it
+                made me realize how exciting my life had become. as a kid, my
+                parents forced me to keep a diary, but i never had anything to
+                write about.{' '}
                 <i>
                   <a
                     href="https://open.spotify.com/track/3i5qVV8azKqGFK4Gzdt5YS?si=0174ffbc5a494e50"
@@ -413,9 +394,7 @@ export default function Index({ name, signs }) {
                     which gender i feel closer to? that's the only way i can put
                     it concretely. occasionally, it's for performative reasons
                     (i.e., for a specific person), but mostly due to hormones
-                    and other emotionally related factors. i really only
-                    realized this due to having a limited selection of clothes
-                    to choose from
+                    and other emotionally related factors.
                   </p>
                   <p>
                     i've known that i'm queer specifically since i was 12
@@ -1068,18 +1047,24 @@ export default function Index({ name, signs }) {
                 almost 2am and i'm finally wrapping this up.
               </p>
               <p>
-                but before i go, to you, the reader: i love you. i said it
-                before, and i'll say it: we're probably platonic or romantic
-                soulmates in another life, unless you're actually deranged. so
-                let's get to know each other! add a post above somewhere, email
-                me at jianmin@jianminchen.com and we can swap phone numbers or
-                something like that.
-              </p>
-              <p>
-                maybe that's really not your thing (i totally get it), and you'd
-                still like to talk to me. in that case, add a message. (yes,
-                creative creation is a sign that you're human. and i would like
-                to talk to humans.)
+                but before i go, if we're all separated by{' '}
+                <a
+                  className="special"
+                  href="https://en.wikipedia.org/wiki/Six_degrees_of_separation"
+                  target="_blank">
+                  six degrees of separation
+                </a>
+                , i want to get to know you, because somewhere in{' '}
+                <a
+                  href="https://en.wikipedia.org/wiki/Everything_Everywhere_All_at_Once"
+                  target="_blank"
+                  className="special">
+                  another dimension
+                </a>{' '}
+                i promise you that we’re platonic or romantic soulmates, if we
+                aren't in this one. so tell me about you. what’d you do this
+                summer? and if you ever want to talk: email for my phone number
+                at jianmin[at]jianminchen.com. you're amazing.
               </p>
             </section>
             <footer className="prose">

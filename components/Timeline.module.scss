@@ -10,7 +10,7 @@
   background: hsl(40, 35%, 76%);
   position: relative;
   z-index: 1;
-  max-height: calc(4rem + 28px + 60vh);
+  max-height: calc(4rem + 28px + 100vh);
 
   &::before {
     content: '';
@@ -41,7 +41,7 @@
 .timeline {
   display: flex;
   gap: 14px;
-  align-items: flex-start;
+  align-items: center;
   overflow-y: hidden;
 }
 
@@ -50,7 +50,7 @@
   font-family: var(--font-sans);
   font-size: 0.995rem;
   max-width: 50%;
-  max-height: 60vh;
+  max-height: 100vh;
   padding: 1rem 2rem;
   overflow: hidden;
   transition: all 0.1s;

@@ -602,7 +602,8 @@ let entries = {
   '07/20': {
     content: (
       <>
-        <p>fucking parents, trigger warning, should i make this public</p>
+        <p>(Written some days later)</p>
+        <p>Worst day of the summer. What else is there to say?</p>
       </>
     )
   },
@@ -610,7 +611,28 @@ let entries = {
     content: (
       <>
         <p>(Written some days later)</p>
-        <p>Went on a field trip to Draper</p>
+        <p>
+          Went on a field trip to{' '}
+          <a href="https://www.draper.com/" target="_blank">
+            Draper
+          </a>
+          ! We had lunch courtesy of Draper; also got a free water bottle.
+          Afterwards, we took a short tour through three places: the biotech
+          lab, which blew my mind because they were doing so much cool things
+          (replicating cells, designing special tubes and such for fighting
+          cancer, etc.) I'm not really a biotech person so some of it definitely
+          went out one year and through the other - but: I saw so many pride
+          flags, which made me so happy. Afterwards, we went down to the space
+          simulation lab, where people at Draper are working with NASA, etc. to
+          write simulations for landing on the moon. Thought stuff couldn't get
+          cooler but it did! Finally, we were supposed to check out the
+          fabrication lab, but we couldn't actually check out anything because
+          we were just about out of time. Oh well.
+        </p>
+        <p>
+          I have conflicted thoughts about working at military-aligned
+          organizations but Draper genuinely seems like a nice place to work at.
+        </p>
       </>
     )
   },
@@ -619,8 +641,33 @@ let entries = {
       <>
         <p>(Written some days later)</p>
         <p>
-          Hanging out at allston-honan, walking down to harvard, thoughts on
-          harvard vs. mit, watching sun set going home
+          I hung out at the{' '}
+          <a
+            href="https://www.bpl.org/locations/honan-allston/"
+            target="_blank">
+            Allston-Honan branch
+          </a>{' '}
+          of the Boston Public Library, eating some really disgusting pasta I
+          made. (Do not combine fat-free refried beans with pasta, ever.)
+        </p>
+        <p>
+          Afterwards I thought it'd be nice to take a walk down to Harvard
+          because I hadn't seen it yet. Harvard Square was jam packed, as
+          expected. (I got lost in Harvard Square last week, sometime, taking
+          the Red Line.)
+        </p>
+        <p>
+          Harvard's a nice place, but even when students are out for the summer,
+          it still feels generic and elitist in a way that MIT doesn't feel
+          like. As in, you'll have homeless people sit next to the most
+          expensive of restaurants. You'll have <i>expensive restaurants</i> -
+          Harvard Square is literally its own enclave, versus MIT campus, which
+          feels like it manages to fit in and add onto the vibe around
+          Cambridge.
+        </p>
+        <p>
+          Walked home as the sun was setting! Would be more romantic if I hadn't
+          needed to go pee, but okay.
         </p>
       </>
     )
@@ -631,38 +678,91 @@ let entries = {
         <p>(Written some days later)</p>
         <p>
           A bunch of people (Dieter, Arianna, Sahiti, Zoya, and Sarthak) came
-          down to Boston today! Actually, I got to han
+          down to Boston today! Actually, I also got to hang out with Adelina,
+          and we spent a couple of hours waiting and just talking about a bunch
+          of different things (what we were working on, thoughts on college
+          admission factors, etc.){' '}
+          <a href="https://kunalbotla.com/" target="_blank">
+            Kunal
+          </a>{' '}
+          also happened to hang out! Claire couldn't make it :/
+        </p>
+        <p>
+          When we finally got up together, we went back to MIT, then to the{' '}
+          <a href="https://www.gardnermuseum.org/" target="_blank">
+            Isabella Stewart Gardner Museum
+          </a>
+          , where we listened to a old lady talk about the{' '}
+          <a
+            href="https://www.gardnermuseum.org/organization/theft"
+            target="_blank">
+            13 stolen paintings in 1990
+          </a>
+          . All I could think about was{' '}
+          <a
+            href="https://en.wikipedia.org/wiki/The_Goldfinch_(novel)"
+            target="_blank">
+            <i>The Goldfinch</i>
+          </a>
+          , which is a great book.
+        </p>
+        <p>
+          Afterwards, we hung around{' '}
+          <a href="https://tattebakery.com/" target="_blank">
+            Tatte
+          </a>{' '}
+          and had a random person take about 15 Polaroids of us. Arianna showed
+          me the Polaroid scrapbook, which has some rather interesting content
+          in there. We then went shopping on Newbury Street, which more
+          realistically was running in and out of stores every five minutes for
+          a specific someone.
+        </p>
+        <p>
+          Wrapped up the night by going to eat{' '}
+          <a href="https://www.fujiatinkblock.com/" target="_blank">
+            Fuji on Ink Block
+          </a>
+          . Best food I've ever tasted, although the final tab was $350...
         </p>
       </>
     )
   },
   '07/24 - 07/25': {
-    content: (
-      <>
-        <p>the usual, boring</p>
-      </>
-    )
+    content: <p>Your usual: seminars and such!</p>
   },
   '07/26': {
     content: (
       <>
-        <p>BWSI's women's networking dinner</p>
+        <p>
+          Had a "networking dinner" or something along the lines of that? Mostly
+          just meant that I had sit there for two hours and focus on a Zoom call
+          with women in the industry. The women were interesting for sure, but
+          let's be honest, I just wanted the $15 gift card, which I used to buy
+          Celsius and two boxes of Cinnamon Toast Crunch instead of dinner like
+          a normal human being.
+        </p>
       </>
     )
   },
   '07/27': {
-    content: (
-      <>
-        <p>the usual, boring</p>
-      </>
-    )
+    content: <p>Your usual: seminars and such!</p>
   },
   '07/28': {
     content: (
       <>
+        <p>(Written a few days after)</p>
         <p>
-          Driving down in Kara's Tesla, first day of hackathon, meeting Sophia
-          and Andrew
+          Thought I was going to miss{' '}
+          <a href="https://outernet.hackclub.com" target="_blank">
+            Outernet
+          </a>
+          , but I didn't thanks to Kara, who spent five hours driving me up to
+          Vermont from Boston.
+        </p>
+        <p>
+          Opening ceremony for Outernet! Don't remember much, just that it was
+          magical and that I went to sleep promptly afterward because I thought
+          I should "be prepared".
         </p>
       </>
     )
@@ -670,9 +770,16 @@ let entries = {
   '07/29': {
     content: (
       <>
+        <p>(Written a few days after)</p>
         <p>
-          Second day of hackathon: pairing activities, leaders meetup, rave at
-          midnight, falling asleep with outerlan folks, wet shoes
+          Second day of hackathon! Sunny Day had us do pairing activities. There
+          was a leaders meetup with fudge (I want more). Other things I
+          remember: getting together with Zoya, Cheru, and Thomas. Helping Cheru
+          run his Sprig workshop. Very very wet shoes, because it started
+          raining. Rave at midnight; apparently my dancing was sick. Stayed in
+          the OuterLAN room because it was actually warm in there, you know,
+          room temperature. Apparently I fell asleep and sat in the same
+          position before the OuterLAN folks had even turned the lights out.
         </p>
       </>
     )
@@ -686,15 +793,53 @@ let entries = {
           closing ceremony and crying, spaghetti and reading why's book but
           feeling sad, campfire and falling asleep{' '}
         </p>
+        <p>(Written a few days after)</p>
+        <p>Final day of Outernet. Actually worked on projects.</p>
+        <p>
+          Halfway through there was a "Build a Boat" competition. It was the
+          most messy, unstructured competition ever and was so much fun.
+          Honestly, thank god for the decent weather, it was nice getting in the
+          lake and just playing around and having fun watching people{' '}
+          <strike>drown</strike> try out their boats in the water.
+        </p>
+        <p>
+          With the end of every HC event is a closing ceremony. It was sunset
+          and freezing, but who cares? Took a terminal selfie. Watched a
+          flamethrower connected to a guitar get used. Laughed too much. Avoided
+          the camera.
+        </p>
+        <p>
+          Afterwards, we had Sam and Belle speak. Almost made me cry, especially
+          because they're now technically HC alumni (fucking crazy). Zoya did a
+          funny skit.
+        </p>
+        <p>
+          11pm: fell asleep in front of the campfire. As in: my head literally
+          lolled forward and I woke up two hours later to see a bunch of people
+          had a left ages ago, with a couple of convos happening.
+        </p>
+        <p>
+          Went to watch <i>Everything Everywhere All At Once</i>, but also fell
+          asleep. Went to sleep back in front of the campfire, feeling sad that
+          it was near the end of Outernet.
+        </p>
       </>
     )
   },
   '07/31': {
     content: (
       <>
+        <p>(Written the day after)</p>
         <p>
-          going back to boston, going for the longest run ever, reading slutty
-          pig, thinking about building this
+          I don't know which insane pore in me decided to return back to Boston
+          and go for a run that ended up being 8 or 9 miles. I took a small walk
+          around{' '}
+          <a href="https://www.prudentialcenter.com/" target="_blank">
+            Prudential Center
+          </a>{' '}
+          and read a restaurant's name <i>Salty Pig</i> as <i>Slutty Pig</i>,
+          which is when I realized it was time to go home and actually do the
+          thing known as sleeping.
         </p>
       </>
     )
@@ -702,19 +847,37 @@ let entries = {
   '08/01': {
     content: (
       <>
-        <p>recovering</p>
+        <p>Slept. Recovered.</p>
       </>
     )
   },
   '08/02': {
     content: (
       <>
-        <p>Checking out Hayden Library</p>
+        <p>
+          Stayed at Hayden Library for a while. When they were about to close, I
+          was so freaked out that my MIT ID wasn't going to work - it did! So I
+          theoretically can stay at the library 24/7, as long as my ID doesn't
+          expire, that is.
+        </p>
       </>
     )
   },
   '08/03': {
-    content: <p>finishing up this website</p>
+    content: (
+      <>
+        <p>
+          Had Hackmon's first meeting! Went for a run out at 10pm to grab some
+          Celsius. Running in big cities, like Boston, for the matter, is so
+          ethereal. Being in a supermarket alone in the middle of the night is
+          also super ethereal.
+        </p>
+        <p>
+          Listening to Maroon right now. I thought I didn't like this song when
+          I first heard the Midnights album but it's pretty goddamn good.
+        </p>
+      </>
+    )
   }
 }
 
@@ -722,39 +885,82 @@ Object.keys(entries).map(date => {
   entries[date].color = choose(postit)
 })
 
-export function Modal() {
+export function TimelineWrapper({ entries }) {
+  const scrollRef = useRef(null)
+  const drag = useDragControls()
+
   return (
-    <div className={modalStyles.wrapper}>
+    <div
+      onPointerDrag={event => drag.start(event)}
+      className={styles.timeline}
+      ref={scrollRef}>
+      {entries}
+    </div>
+  )
+}
+
+export function Modal({ setModal }) {
+  const [currTimeline, setCurrTimeline] = useState([])
+  const [custom, setCustom] = useState(false)
+
+  return (
+    <div className={modalStyles.wrapper} onClick={() => setModal(false)}>
       <style jsx global>{`
         body,
         html {
           overflow-y: hidden;
         }
       `}</style>
-      <div className={modalStyles.modal}>
-        <div className={styles.container}>hi</div>
+      <div
+        className={modalStyles.modal}
+        onClick={event => event.stopPropagation()}>
+        <div></div>
+        <div style={{ padding: '1rem' }}>
+          <TimelineWrapper
+            entries={[
+              ...Object.keys(currTimeline)
+                .sort(
+                  (a, b) => Date(a.split(' - ')[0]) - Date(b.split(' - ')[0])
+                )
+                .map(date => (
+                  <div
+                    key={date}
+                    className={styles.info}
+                    style={{ backgroundColor: entries[date].color }}>
+                    <h2>{date}</h2>
+                    {entries[date].content}
+                  </div>
+                )),
+              <form
+                className={styles.info}
+                style={{ backgroundColor: choose(postit) }}
+                onSubmit={event => {
+                  event.preventDefault()
+                  console.log(event.target)
+                  event.target.reset() // Clear form
+                }}>
+                <h2 contentEditable data-ph="date" name="date"></h2>
+                <div
+                  contentEditable
+                  data-ph="markdown for your amazing summer"
+                  name="content"></div>
+                <button style={{ backgroundColor: 'transparent' }}>add</button>
+              </form>
+            ]}
+          />
+        </div>
       </div>
     </div>
   )
 }
 
 export default function Timeline() {
-  const scrollRef = useRef(null)
-  const drag = useDragControls()
   const [modal, setModal] = useState(false)
 
   return (
     <div className={styles.container}>
-      {modal === true && <Modal />}
-      <motion.div drag="x" dragControls={drag} />
-      <marquee>
-        <button>share your own, pls &darr;</button>
-      </marquee>
-      <div
-        onPointerDrag={event => drag.start(event)}
-        className={styles.timeline}
-        ref={scrollRef}>
-        {Object.keys(entries)
+      <TimelineWrapper
+        entries={Object.keys(entries)
           .sort((a, b) => Date(a.split(' - ')[0]) - Date(b.split(' - ')[0]))
           .map(date => (
             <div
@@ -765,7 +971,7 @@ export default function Timeline() {
               {entries[date].content}
             </div>
           ))}
-      </div>
+      />
     </div>
   )
 }

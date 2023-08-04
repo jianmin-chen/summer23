@@ -34,6 +34,22 @@ img {
   user-select: none;
 }
 
+[contenteditable='true'] {
+  outline: none;
+  cursor: text;
+}
+
+div[contenteditable='true'] {
+  min-height: calc(1.5rem * 10);
+  width: 25vw;
+}
+
+[contenteditable='true']:empty:not(:focus):before {
+  content: attr(data-ph);
+  color: grey;
+  font-style: italic;
+}
+
 footer {
   background-color: #cecece;
   padding: 1rem;

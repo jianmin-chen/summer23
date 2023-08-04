@@ -31,21 +31,6 @@ export function Album({ photos, options, setModal }) {
             }}
           />
         ))}
-        {options.scrollButton === true ? (
-          <marquee>
-            <button
-              onClick={() => setModal(true)}
-              dangerouslySetInnerHTML={{
-                __html: options.buttonText
-              }}
-            />
-          </marquee>
-        ) : (
-          <button
-            onClick={() => setModal(true)}
-            dangerouslySetInnerHTML={{ __html: options.buttonText }}
-          />
-        )}
       </motion.div>
     </div>
   )

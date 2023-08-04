@@ -9,6 +9,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .modal {
@@ -16,7 +17,7 @@
     linear-gradient(to bottm right, hsla(0, 0%, 0%, 0) 40%, hsla(0, 0%, 0%, 1));
   background: hsl(40, 35%, 76%);
   border-radius: 14px;
-  width: 100vw;
+  width: 80vw;
   height: 80vh;
   display: flex;
 
