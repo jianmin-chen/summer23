@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@supabase/supabase-js": "^2.31.0",
+        "aws-sdk": "^2.1429.0",
         "figlet": "^1.6.0",
         "framer-motion": "^10.15.0",
         "next": "13.4.12",

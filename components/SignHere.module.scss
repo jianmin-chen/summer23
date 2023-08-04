@@ -1,3 +1,33 @@
 .container {
-  border: 5px dashed #ccd;
+  flex-grow: 0;
+  max-width: 100%;
+  cursor:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✏️</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+  min-height: 50vh;
+}
+
+.note {
+  background-image: url('../public/note.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: var(--font-mono), monospace;
+  font-size: 1.3rem;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem;
+  padding-right: 1rem;
+
+  p {
+    margin: 0;
+  }
+
+  .name {
+    align-self: flex-end;
+  }
 }

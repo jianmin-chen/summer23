@@ -7,11 +7,10 @@ html {
   background: url('../public/paper.png');
   background-attachment: fixed;
   background-size: cover;
-  font-family: 'Playfair 2', serif;
   margin: 0;
-  overflow-x: hidden;
   padding: 0;
   height: 100%;
+  overflow-x: clip;
   scroll-behavior: smooth;
 }
 
@@ -132,7 +131,12 @@ h2 {
   }
 
   > div:nth-child(1) {
+    flex-shrink: 0;
     margin: 0.2rem 2rem 0.5rem 0;
+  }
+
+  > div:nth-child(3) {
+    flex-shrink: 0;
   }
 
   > div:nth-child(2) {

@@ -57,6 +57,10 @@
   position: relative;
   z-index: 99;
 
+  a {
+    text-decoration-style: wavy;
+  }
+
   h2 {
     border-bottom-style: dashed;
   }

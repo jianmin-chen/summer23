@@ -9,20 +9,51 @@ export default async function handler(req, res) {
 
   if (method === 'GET') {
     try {
+      // Get either timeline snippets of all or timeline of specific user
       const { user } = req.query
       if (!user) {
-        // Get all users' timelines (excerpt)
         const { data, error } = await supabase
           .from('timeline')
           .select()
-          .order('inserted_at', { ascending: false })
+          .order('user')
         if (error) throw new Error(error)
-        return res.status(200).json({ success: true, comments: data })
+        return res.status(200).json({ success: true, timelines: data })
       } else {
-        // Get a specific user's timeline
+        // Get specific user
+        const { data, error } = await supabase
+          .from('timeline')
+          .select({
+            user
+          })
+          .order('date', { ascending: false })
+        if (error) throw new Error(error)
+        return res.status(200).json({ success: true, timeline: data })
       }
     } catch (err) {
-      return res.status(500).json({ success: false, reason: err.toString() })
+      return res.status(500).json({
+        success: false,
+        reason: err.toString()
+      })
     }
-  }
+  } else if (method === 'POST') {
+    // Add timeline under user
+    try {
+      const { user, content } = req.body
+      if (!user || !content) return res.status(401)
+      for (let date of content) {
+        const { error } = await supabase.from('timeline').insert({
+          date,
+          user, // Probably user id
+          ...content[date]
+        })
+        if (error) throw new Error(error)
+      }
+      return res.status(200)
+    } catch (err) {
+      return res.status(500).json({
+        success: false,
+        reason: err.toString()
+      })
+    }
+  } else return res.status(404)
 }

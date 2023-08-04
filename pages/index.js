@@ -5,6 +5,7 @@ import ResizeContext from '@/components/ResizeContext'
 import { rotate } from '@/utils.js'
 import dynamic from 'next/dynamic'
 import SignHere from '@/components/SignHere'
+import { createClient } from '@supabase/supabase-js'
 
 const PhotoAlbum = dynamic(() => import('@/components/PhotoAlbum'), {
   ssr: false
@@ -14,7 +15,7 @@ const Timeline = dynamic(() => import('@/components/Timeline'), {
   ssr: false
 })
 
-export default function Index({ name }) {
+export default function Index({ name, signs }) {
   const { width, height, ref } = useResizeDetector()
 
   return (
@@ -206,10 +207,15 @@ export default function Index({ name }) {
               />
             }
           />
-          <SignHere side="left" />
+          <SignHere
+            side="left"
+            signs={signs.slice(Math.floor(signs.length / 2))}
+          />
         </div>
         <ResizeContext.Provider value={{ width, height }}>
-          <div style={{ color: 'gray' }} ref={ref}>
+          <div
+            style={{ color: 'gray', position: 'relative', zIndex: 1 }}
+            ref={ref}>
             <p>
               please listen to the music, either with your own service or
               through the previews.{' '}
@@ -336,14 +342,6 @@ export default function Index({ name }) {
                   </li>
                   <li>
                     <a
-                      href="https://www.goodreads.com/book/show/54814676-crying-in-h-mart"
-                      target="_blank"
-                      className="special">
-                      crying in h mart
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       href="https://cpu.land"
                       target="_blank"
                       className="special">
@@ -383,7 +381,7 @@ export default function Index({ name }) {
                 </p>
                 <details>
                   <summary>
-                    <h3>on gender & sexuality</h3>
+                    <h3>on gender & sexuality (& water)</h3>
                   </summary>
                   <p>
                     my journey with this has been interesting. i'm starting to
@@ -393,12 +391,9 @@ export default function Index({ name }) {
                   <p>
                     prior to this summer, i think i was super rigid about it, as
                     in: i'm very definitely much only into people that identify
-                    as female.
-                  </p>
-                  <p>
-                    now, i'd say i definitely still have a preference with
-                    people that identify as female, but i'm also trying to work
-                    through{' '}
+                    as female. now, i can still confidently say i definitely
+                    still have a preference with people that identify as female,
+                    but i'm also trying to work through{' '}
                     <a
                       href="https://en.wikipedia.org/wiki/Compulsory_heterosexuality"
                       target="_blank"
@@ -409,16 +404,34 @@ export default function Index({ name }) {
                   </p>
                   <p>
                     in terms of gender: just about everyday i wake up and decide
-                    that i'd like to dress or act as if i'm part of one of the
-                    two main binary genders. sometimes it's for a specific
-                    person, but mostly it's about what i feel comfortable in
-                    that day. don't know if this is of any significance
-                    currently.
+                    which gender i feel closer to? that's the only way i can put
+                    it concretely. occasionally, it's for performative reasons
+                    (i.e., for a specific person), but mostly due to hormones
+                    and other emotionally related factors. i really only
+                    realized this due to having a limited selection of clothes
+                    to choose from
                   </p>
                   <p>
                     i've known that i'm queer specifically since i was 12
                     (although obviously there were signs before), so it's
-                    interesting seeing how that can change over time.
+                    interesting seeing how that can change over time and just
+                    generally being very accepting of it.
+                  </p>
+                  <p>
+                    i've been thinking about my connection to water. a while
+                    ago, i read{' '}
+                    <a
+                      href="https://www.goodreads.com/en/book/show/61387386"
+                      target="_blank"
+                      className="special">
+                      chlorine
+                    </a>
+                    , which takes a girl's literal obsession with water and
+                    watches how it changes as her mental state slowly
+                    deteriorates. (...it's an interesting read, one of those
+                    books i personally don't like as a book but as something to
+                    be examined.) one thing the book explores is performativity
+                    in swimming.
                   </p>
                 </details>
                 <details id="connection-to-art">
@@ -702,19 +715,20 @@ export default function Index({ name }) {
                   className="special">
                   taking the green line everyday
                 </a>
-                . getting lost in boston,{' '}
+                . getting lost in boston, walking over the charles river bridge
+                everyday, listening to the monotonous tone of "77 massachusetts
+                ave, mit" on bus 1. singing riptide together:{' '}
+                <a className="special" href="/crash.mp3">
+                  a late night hackathon/farewell party
+                </a>
+                , opener, rave,{' '}
                 <a
                   href="https://www.strava.com/athletes/114092908"
                   target="_blank"
                   className="special">
                   running
-                </a>
-                , walking over the charles river bridge everyday, listening to
-                the monotonous tone of "77 massachusetts ave, mit" on bus 1.{' '}
-                <a className="special" href="/crash.mp3">
-                  a late night hackathon/farewell party
-                </a>
-                . these are the lyrics i remember.
+                </a>{' '}
+                - these are the lyrics i remember.
               </p>
               <p>
                 i met a kid named quincy at the start of this summer and asked
@@ -970,8 +984,40 @@ export default function Index({ name }) {
                 really enjoyable.
               </p>
               <p>
-                and obviously: everyone else at hq. i didn't get to know all of
-                you but maybe next summer if y'all are still around?
+                and obviously: everyone else at hq (
+                <a href="#" target="_blank" className="special">
+                  shubham
+                </a>
+                ,{' '}
+                <a href="#" target="_blank" className="special">
+                  ian
+                </a>
+                ,{' '}
+                <a href="#" target="_blank" className="special">
+                  alex
+                </a>
+                ,{' '}
+                <a href="#" target="_blank" className="special">
+                  fayd
+                </a>
+                ,{' '}
+                <a href="#" target="_blank" className="special">
+                  lexi
+                </a>
+                ,{' '}
+                <a href="#" target="_blank" className="special">
+                  caleb
+                </a>
+                ,{' '}
+                <a href="#" target="_blank" className="special">
+                  b
+                </a>
+                ,{' '}
+                <a href="#" target="_blank" className="special">
+                  ruien
+                </a>
+                ). i didn't get to know all of you but maybe next summer if
+                y'all are still around?
               </p>
               <p>
                 my heart is hurting so much right now but in a good way. it's
@@ -1011,6 +1057,13 @@ export default function Index({ name }) {
                 className="special">
                 framer motion
               </a>
+              ,{' '}
+              <a
+                href="https://www.cloudflare.com/developer-platform/r2/"
+                target="_blank"
+                className="special">
+                cloudflare r2
+              </a>
               , and ❤️. fonts:{' '}
               <a
                 href="https://fonts.google.com/specimen/Lora"
@@ -1032,6 +1085,13 @@ export default function Index({ name }) {
                 className="special">
                 inter
               </a>
+              ,{' '}
+              <a
+                href="https://www.1001fonts.com/ransom-font.html"
+                target="_blank"
+                className="special">
+                ransom
+              </a>
               , and{' '}
               <a
                 href="https://fonts.google.com/specimen/IBM+Plex+Sans"
@@ -1039,8 +1099,14 @@ export default function Index({ name }) {
                 className="special">
                 ibm plex sans
               </a>
-              . hours it took to make: an all-nighter + a half-day next to
-              memorial drive next to mit & the{' '}
+              . hours it took to make: an all-nighter at an apartment in{' '}
+              <a
+                href="https://en.wikipedia.org/wiki/Allston"
+                target="_blank"
+                className="special">
+                allston
+              </a>
+              , boston + an all-nighter at mit's{' '}
               <a
                 href="https://libraries.mit.edu/hayden/"
                 target="_blank"
@@ -1079,7 +1145,7 @@ export default function Index({ name }) {
                 className="special">
                 amie's calendar journey
               </a>
-              , mbta ui decisions
+              , mbta ui decisions.
             </footer>
           </div>
         </ResizeContext.Provider>
@@ -1288,6 +1354,10 @@ export default function Index({ name }) {
               />
             }
           />
+          <SignHere
+            side="right"
+            signs={signs.slice(0, Math.floor(signs.length / 2))}
+          />
         </div>
       </div>
     </div>
@@ -1308,9 +1378,17 @@ export async function getStaticProps() {
       )
     })
 
+  const supabase = createClient(
+    process.env.SUPABASE_URL,
+    process.env.SUPABASE_KEY
+  )
+  let { data, error } = await supabase.from('sign').select()
+  if (error) data = []
+
   return {
     props: {
-      name: await load("hi, i'm jc.")
+      name: await load("hi, i'm jc."),
+      signs: data
     }
   }
 }

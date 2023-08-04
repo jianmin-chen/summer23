@@ -1,7 +1,9 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styles from './SignHere.module.scss'
+import { random, rotate, randomOutlier } from '@/utils'
+import Lyrics from './Lyrics'
 
-export default function SignHere({ side }) {
+export function Old({ side }) {
   const canvasRef = useRef(null)
   const mouseRef = useRef({
     x: 0,
@@ -22,8 +24,9 @@ export default function SignHere({ side }) {
       resize()
 
       const setPosition = event => {
-        mouseRef.current.x = event.clientX
-        mouseRef.current.y = event.clientY
+        const rect = event.target.getBoundingClientRect()
+        mouseRef.current.x = event.clientX - rect.left - 5
+        mouseRef.current.y = event.clientY - rect.top - 5
       }
 
       const draw = event => {
@@ -57,4 +60,49 @@ export default function SignHere({ side }) {
   }, [])
 
   return <canvas className={styles.container} ref={canvasRef} />
+}
+
+export default function New({ signs = [], side }) {
+  const [notes, setNotes] = useState(signs)
+
+  return (
+    <div
+      className={styles.container}
+      onClick={() => {
+        const content = prompt('write your own, pls')
+        if (content) {
+          const name = prompt(
+            'and your name, pls keep in mind this is moderated'
+          )
+          if (name) {
+            fetch('/api/sign', {
+              method: 'POST',
+              headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                sign: content,
+                user: name
+              })
+            }).then(res => {
+              setNotes([...notes, { sign: content, user: name }])
+            })
+          }
+        }
+      }}>
+      {notes.map((note, idx) => (
+        <div
+          className={styles.note}
+          key={idx}
+          style={{
+            transform: `rotate(${rotate(-5, 5)}deg)`,
+            margin: `-${random(-50, 50)}px`
+          }}>
+          <p>{note.sign}</p>
+          <p className={styles.name}>- {note.user}</p>
+        </div>
+      ))}
+    </div>
+  )
 }

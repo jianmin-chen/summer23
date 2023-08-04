@@ -21,6 +21,7 @@ export function Album({ photos, options, setModal }) {
             src={`https://pub-89101da5a5544ab78e0d8784ec0d65ae.r2.dev/jc${
               i + 1
             }.jpg`}
+            onError={event => ref.current.removeChild(event.target)}
             className={styles.polaroid}
             style={{
               top: `${random(0, height)}px`,
