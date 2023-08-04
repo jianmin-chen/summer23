@@ -45,7 +45,7 @@ export default function App({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0,width=device-width" />
         <meta property="og:site_name" content="summer of 23" />
-        <meta property="og:image" content="https://summer23.me/meta.webp" />
+        <meta property="og:image" content="https://summer23.me/meta.png" />
         <meta property="og:title" content="summer of 23" />
         <meta
           property="og:description"
@@ -62,9 +62,9 @@ export default function App({ Component, pageProps }) {
           name="twitter:description"
           content="just recapping a life-changing summer"
         />
-        <meta itemProp="image" content="https://summer23.me/meta.webp" />
+        <meta itemProp="image" content="https://summer23.me/meta.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://summer23.me/meta.webp" />
+        <meta name="twitter:image" content="https://summer23.me/meta.png" />
         <meta name="apple-mobile-web-app-title" content="summer of 23" />
         <title>summer of 23</title>
         <link

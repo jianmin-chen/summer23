@@ -62,7 +62,7 @@ export function Old({ side }) {
   return <canvas className={styles.container} ref={canvasRef} />
 }
 
-export default function New({ signs = [], side }) {
+export default function New({ signs = [], side = 'left' }) {
   const [notes, setNotes] = useState(signs)
 
   return (
@@ -97,7 +97,7 @@ export default function New({ signs = [], side }) {
           key={idx}
           style={{
             transform: `rotate(${rotate(-5, 5)}deg)`,
-            margin: `-${random(-50, 50)}px`
+            margin: side === 'left' ? `-${random(-50, 50)}px` : '0 10px 0 0'
           }}>
           <p>{note.sign}</p>
           <p className={styles.name}>- {note.user}</p>

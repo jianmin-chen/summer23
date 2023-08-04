@@ -217,15 +217,21 @@ export default function Index({ name, signs }) {
             style={{ color: 'gray', position: 'relative', zIndex: 1 }}
             ref={ref}>
             <p>
-              please listen to the music, either with your own service or
-              through the previews.{' '}
+              please listen to the music, either with your own service (
+              <a
+                href="https://open.spotify.com/playlist/5kqUrzzqKXslO0m7Ciu2m4?si=c7ac600472df4234"
+                target="_blank"
+                className="special">
+                here's a playlist
+              </a>{' '}
+              with all of it) or through the previews.{' '}
               <a className="special" href="#connection-to-art">
                 i talk more about music & art later, so it's important to me.
               </a>
             </p>
             <p>
               some design decisions are intentional, given purposeful and/or
-              time constraints.
+              time constraints. we love janky websites!
             </p>
             <header className="paper">
               <pre id="heading">
@@ -381,7 +387,7 @@ export default function Index({ name, signs }) {
                 </p>
                 <details>
                   <summary>
-                    <h3>on gender & sexuality (& water)</h3>
+                    <h3>on gender & sexuality</h3>
                   </summary>
                   <p>
                     my journey with this has been interesting. i'm starting to
@@ -416,22 +422,6 @@ export default function Index({ name, signs }) {
                     (although obviously there were signs before), so it's
                     interesting seeing how that can change over time and just
                     generally being very accepting of it.
-                  </p>
-                  <p>
-                    i've been thinking about my connection to water. a while
-                    ago, i read{' '}
-                    <a
-                      href="https://www.goodreads.com/en/book/show/61387386"
-                      target="_blank"
-                      className="special">
-                      chlorine
-                    </a>
-                    , which takes a girl's literal obsession with water and
-                    watches how it changes as her mental state slowly
-                    deteriorates. (...it's an interesting read, one of those
-                    books i personally don't like as a book but as something to
-                    be examined.) one thing the book explores is performativity
-                    in swimming.
                   </p>
                 </details>
                 <details id="connection-to-art">
@@ -480,7 +470,8 @@ export default function Index({ name, signs }) {
                     consider to be close to me in real life)? i think it's
                     because i don't really know you, so i can trust you with a
                     personal website: if you don't like it, you get off, and if
-                    you do, you might just stick around.
+                    you do, you might just stick around. and we could end up as
+                    best friends, the whole jizz and jam.
                   </p>
                   <p>
                     in my opinion, the people who work at the intersection of
@@ -488,7 +479,8 @@ export default function Index({ name, signs }) {
                     including but not limited to literature, art, music,
                     philosophy & ethics, politics, and sub-categories like
                     neuroscience and other medical fields) are the most amazing
-                    people.
+                    people. i'm glad i've gotten to know so many of these
+                    people, and that i get to become one of these people.
                   </p>
                 </details>
                 <details>
@@ -820,9 +812,9 @@ export default function Index({ name, signs }) {
               </p>
             </section>
             <section className="prose">
-              <h2>acknowledgements</h2>
+              <h2>acknowledgments</h2>
               <p>
-                i saved acknowledgements for last because without these people,
+                i saved acknowledgments for last because without these people,
                 everything that happened this summer...{' '}
                 <b>
                   well, wouldn't have happened. thanks for all the magic y'all.
@@ -866,9 +858,10 @@ export default function Index({ name, signs }) {
                 recommendations. (spotify is now giving me mitski recs too. 🤦)
                 please continue. sahiti, you have a fucking amazing website!
                 thanks for being so sweet and i'll definitely see you next year.
-                (what happened to love island?) arianna, i love being the
-                mysterious cousin. (someone has yet to send me the link to the
-                family tree.) i'll see you in pittsburgh probably!
+                (what happened to love island? and podcast. we need to organize
+                that.) arianna, i love being the mysterious cousin. (someone has
+                yet to send me the link to the family tree.) i'll see you in
+                pittsburgh probably! maybe i'll hang around longer :)
               </p>
               <p>
                 <a href="https://srtk.me/" target="_blank" className="special">
@@ -884,7 +877,7 @@ export default function Index({ name, signs }) {
                   fuji on ink block
                 </a>
                 . the food there was fucking delicious and you're one of the
-                most wack people i've met in a good way.
+                most wack people i've met in a good way. also, amazing dj.
               </p>
               <p>
                 deet: thanks for driving that subaru of yours. probably the
@@ -985,43 +978,94 @@ export default function Index({ name, signs }) {
               </p>
               <p>
                 and obviously: everyone else at hq (
-                <a href="#" target="_blank" className="special">
+                <a
+                  href="https://shubhampatil.dev/"
+                  target="_blank"
+                  className="special">
                   shubham
                 </a>
                 ,{' '}
-                <a href="#" target="_blank" className="special">
+                <a
+                  href="https://github.com/YodaLightsabr"
+                  target="_blank"
+                  className="special">
                   ian
                 </a>
                 ,{' '}
-                <a href="#" target="_blank" className="special">
+                <a
+                  href="https://www.alexdeforrest.com/"
+                  target="_blank"
+                  className="special">
                   alex
                 </a>
                 ,{' '}
-                <a href="#" target="_blank" className="special">
+                <a
+                  href="https://github.com/faisalsayed10"
+                  target="_blank"
+                  className="special">
                   fayd
                 </a>
                 ,{' '}
-                <a href="#" target="_blank" className="special">
+                <a
+                  href="https://kognise.dev"
+                  target="_blank"
+                  className="special">
                   lexi
                 </a>
                 ,{' '}
-                <a href="#" target="_blank" className="special">
+                <a
+                  href="https://calebden.io/"
+                  target="_blank"
+                  className="special">
                   caleb
                 </a>
                 ,{' '}
-                <a href="#" target="_blank" className="special">
+                <a
+                  href="https://www.enby.land/"
+                  target="_blank"
+                  className="special">
                   b
                 </a>
                 ,{' '}
-                <a href="#" target="_blank" className="special">
+                <a href="https://rluo.dev/" target="_blank" className="special">
                   ruien
                 </a>
                 ). i didn't get to know all of you but maybe next summer if
-                y'all are still around?
+                y'all are still around? same to the following amazing people i
+                wish i could have gotten to know better:{' '}
+                <a
+                  href="https://www.clairebookworm.com/"
+                  target="_blank"
+                  className="special">
+                  claire
+                </a>
+                ,{' '}
+                <a
+                  href="https://neelr.dev/"
+                  target="_blank"
+                  className="special">
+                  neel
+                </a>
+                ,{' '}
+                <a
+                  href="https://adelinachau.com/"
+                  target="_blank"
+                  className="special">
+                  adelina
+                </a>
+                , the other{' '}
+                <a
+                  href="https://parkalex.dev/"
+                  target="_blank"
+                  className="special">
+                  alex
+                </a>
+                , and the other people i fell a bit out of connection with:
+                sophia, andrew.
               </p>
               <p>
                 my heart is hurting so much right now but in a good way. it's
-                almost 8pm and i'm finally wrapping this up.
+                almost 2am and i'm finally wrapping this up.
               </p>
               <p>
                 but before i go, to you, the reader: i love you. i said it
@@ -1033,9 +1077,9 @@ export default function Index({ name, signs }) {
               </p>
               <p>
                 maybe that's really not your thing (i totally get it), and you'd
-                still like to talk to me. in that case, add something to this
-                amazing banner. (yes, creative creation is a sign that you're
-                human. and i would like to talk to humans.)
+                still like to talk to me. in that case, add a message. (yes,
+                creative creation is a sign that you're human. and i would like
+                to talk to humans.)
               </p>
             </section>
             <footer className="prose">
@@ -1064,6 +1108,13 @@ export default function Index({ name, signs }) {
                 className="special">
                 cloudflare r2
               </a>
+              ,{' '}
+              <a
+                href="https://supabase.com/"
+                target="_blank"
+                className="special">
+                supabase
+              </a>
               , and ❤️. fonts:{' '}
               <a
                 href="https://fonts.google.com/specimen/Lora"
@@ -1087,10 +1138,10 @@ export default function Index({ name, signs }) {
               </a>
               ,{' '}
               <a
-                href="https://www.1001fonts.com/ransom-font.html"
+                href="https://fonts.google.com/specimen/Anonymous+Pro"
                 target="_blank"
                 className="special">
-                ransom
+                anonymous pro
               </a>
               , and{' '}
               <a
@@ -1145,7 +1196,13 @@ export default function Index({ name, signs }) {
                 className="special">
                 amie's calendar journey
               </a>
-              , mbta ui decisions.
+              , mbta ui decisions.{' '}
+              <a
+                href="https://github.com/jianmin-chen/summer23"
+                target="_blank"
+                className="special">
+                source
+              </a>
             </footer>
           </div>
         </ResizeContext.Provider>

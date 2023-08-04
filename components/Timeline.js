@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import styles from './Timeline.module.scss'
 import { choose, approx } from '@/utils'
 import { motion, useDragControls } from 'framer-motion'
+import modalStyles from './Modal.module.scss'
 
 const postit = ['#74ed4b', '#ff7eb9', '#ffa930', '#feff9c']
 
@@ -596,11 +597,7 @@ let entries = {
     )
   },
   '07/13 - 07/19': {
-    content: (
-      <>
-        <p>your usual, seminars and such</p>
-      </>
-    )
+    content: <p>Your usual: seminars and such!</p>
   },
   '07/20': {
     content: (
@@ -612,7 +609,8 @@ let entries = {
   '07/21': {
     content: (
       <>
-        <p>draper field trip</p>
+        <p>(Written some days later)</p>
+        <p>Went on a field trip to Draper</p>
       </>
     )
   },
@@ -724,13 +722,30 @@ Object.keys(entries).map(date => {
   entries[date].color = choose(postit)
 })
 
+export function Modal() {
+  return (
+    <div className={modalStyles.wrapper}>
+      <style jsx global>{`
+        body,
+        html {
+          overflow-y: hidden;
+        }
+      `}</style>
+      <div className={modalStyles.modal}>
+        <div className={styles.container}></div>
+      </div>
+    </div>
+  )
+}
+
 export default function Timeline() {
   const scrollRef = useRef(null)
-
   const drag = useDragControls()
+  const [modal, setModal] = useState(false)
 
   return (
     <div className={styles.container}>
+      {modal === true && <Modal />}
       <motion.div drag="x" dragControls={drag} />
       <marquee>
         <button>share your own, pls &darr;</button>
