@@ -1068,7 +1068,7 @@ export default function Index({ name, signs }) {
                 i promise you that we’re platonic or romantic soulmates, if we
                 aren't in this one. so tell me about you. what’d you do this
                 summer? and if you ever want to talk: email for my phone number
-                at jianmin[at]jianminchen.com. you're amazing.
+                at jianmin[zero]chen[at]gmail.com. you're amazing.
               </p>
             </section>
             <footer className="prose">
