@@ -45,7 +45,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/0JzXOFasHsqh3lvm8wIAGi?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -80,7 +80,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/3i5qVV8azKqGFK4Gzdt5YS?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -122,7 +122,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/0ffR94ZvwbnvyVrjdV4Ckj?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -152,7 +152,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/44KWbTVZev3SWdv1t5UoYE?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -179,7 +179,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/2V65y3PX4DkRhy1djlxd9p?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -201,7 +201,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/60eOMEt3WNVX1m1jmApmnX?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1235,7 +1235,7 @@ export default function Index({ name, signs }) {
                 width="100%"
                 height="152"
                 frameBorder="0"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1263,7 +1263,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/35IcAVSMsU9qzHfpPbvC8A?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1294,7 +1294,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/2Tuaa6mlnDZ7vJhtdQ8ZSw?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1322,7 +1322,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/6iWEhoALoBFnQMNVhYY0Sc?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1350,7 +1350,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/7BKLCZ1jbUBVqRi2FVlTVw?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1378,7 +1378,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/15vzANxN8G9wWfwAJLLMCg?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1405,7 +1405,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/1rIKgCH4H52lrvDcz50hS8?utm_source=generator"
                 width="100%"
                 height="152"
-                allowfullscreen=""
+                allowFullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />

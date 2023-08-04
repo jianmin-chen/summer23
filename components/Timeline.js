@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import styles from './Timeline.module.scss'
 import { choose, approx } from '@/utils'
 import { motion, useDragControls } from 'framer-motion'
@@ -732,7 +732,7 @@ export function Modal() {
         }
       `}</style>
       <div className={modalStyles.modal}>
-        <div className={styles.container}></div>
+        <div className={styles.container}>hi</div>
       </div>
     </div>
   )

@@ -5,6 +5,8 @@ import { rotate, random } from '@/utils'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
+// I know how to make this more
+
 const defaultPhotos = new Array(62).fill(0)
 
 export function Album({ photos, options, setModal }) {
@@ -21,7 +23,6 @@ export function Album({ photos, options, setModal }) {
             src={`https://pub-89101da5a5544ab78e0d8784ec0d65ae.r2.dev/jc${
               i + 1
             }.jpg`}
-            onError={event => ref.current.removeChild(event.target)}
             className={styles.polaroid}
             style={{
               top: `${random(0, height)}px`,
@@ -51,10 +52,6 @@ export function Album({ photos, options, setModal }) {
 }
 
 export function Modal() {
-  useEffect(() => {
-    window.addEventListener()
-  }, [])
-
   return (
     <div className={modalStyles.wrapper}>
       <style jsx global>{`
