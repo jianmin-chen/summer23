@@ -57,6 +57,7 @@ export default function App({ Component, pageProps }) {
           itemProp="description"
           content="just recapping a life-changing summer"
         />
+        <meta name="twitter:card" content="summary"/>
         <meta name="twitter:title" content="summer of 23" />
         <meta
           name="twitter:description"
