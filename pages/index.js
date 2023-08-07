@@ -217,7 +217,8 @@ export default function Index({ name, signs }) {
             style={{ color: 'gray', position: 'relative', zIndex: 1 }}
             ref={ref}>
             <p>
-              please listen to the music, either with your own service (
+              please view on a computer and listen to the music, either with
+              your own service (
               <a
                 href="https://open.spotify.com/playlist/5kqUrzzqKXslO0m7Ciu2m4?si=c7ac600472df4234"
                 target="_blank"
@@ -555,17 +556,17 @@ export default function Index({ name, signs }) {
                   <p>
                     i'm conflicted about this right now. i wrote a{' '}
                     <a
-                      href="https://markright.vercel.app/public/6455080fd1dba366ec0292ce/1526393384"
+                      href="https://jianminchen.com/assets/the-letter.pdf"
                       target="_blank"
                       className="special">
                       letter
                     </a>{' '}
                     (and{' '}
                     <a
-                      href="https://markright.vercel.app/public/6455080fd1dba366ec0292ce/38598368"
+                      href="https://jianminchen.com/assets/i-need-to-come-out.pdf"
                       target="_blank"
                       className="special">
-                      another
+                      another incomplete one
                     </a>
                     ) on a whim. trigger warning: abuse, filial piety. this is
                     something i find very hard to talk about and am struggling
@@ -1068,7 +1069,13 @@ export default function Index({ name, signs }) {
                 i promise you that we’re platonic or romantic soulmates, if we
                 aren't in this one. so tell me about you. what’d you do this
                 summer? and if you ever want to talk: email for my phone number
-                at jianmin[zero]chen[at]gmail.com. you're amazing.
+                at jianmin[zero]chen[at]gmail.com. you're amazing.{' '}
+                <a
+                  href="https://open.spotify.com/playlist/6uhtHYR2R3ZQNXIbYdpbYk?si=9ad19b74f0c74e6a"
+                  target="_blank"
+                  className="special">
+                  here's to the next era, alrighty?
+                </a>
               </p>
             </section>
             <footer className="prose">
@@ -1089,13 +1096,6 @@ export default function Index({ name, signs }) {
                 target="_blank"
                 className="special">
                 framer motion
-              </a>
-              ,{' '}
-              <a
-                href="https://www.cloudflare.com/developer-platform/r2/"
-                target="_blank"
-                className="special">
-                cloudflare r2
               </a>
               ,{' '}
               <a
@@ -1193,6 +1193,7 @@ export default function Index({ name, signs }) {
                 source
               </a>
             </footer>
+            <SignHere side="center" />
           </div>
         </ResizeContext.Provider>
         <div>
@@ -1410,7 +1411,7 @@ export default function Index({ name, signs }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const load = val =>
     new Promise((resolve, reject) => {
       figlet(

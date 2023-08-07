@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import styles from './Timeline.module.scss'
 import { choose, approx } from '@/utils'
-import { motion, useDragControls } from 'framer-motion'
+import { motion, useAnimate, useDragControls } from 'framer-motion'
 import modalStyles from './Modal.module.scss'
 
 const postit = ['#74ed4b', '#ff7eb9', '#ffa930', '#feff9c']
@@ -102,7 +102,8 @@ let entries = {
           .
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '06/25': {
     content: (
@@ -162,7 +163,8 @@ let entries = {
           shower tomorrow.
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '06/26': {
     content: (
@@ -185,7 +187,8 @@ let entries = {
         was sleeptalking. You know, the awkward but sweet kind of close. There
         was six of us on one couch! How the fuck is that possible!
       </p>
-    )
+    ),
+    highlight: true
   },
   '06/27': {
     content: (
@@ -234,7 +237,8 @@ let entries = {
           mosquito bites, 2 back pain hotspots, and 1 sleepy brain.
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '06/28': {
     content: (
@@ -251,7 +255,8 @@ let entries = {
         for Wednesday Open Mic night. Some of the sets were hilarious, but by
         the end of the night, I had enough of penis jokes. Pretty fun though!
       </p>
-    )
+    ),
+    highlight: true
   },
   '06/29': {
     content: (
@@ -295,7 +300,8 @@ let entries = {
         </a>
         ! Thomas happened to bring it to HQ.
       </p>
-    )
+    ),
+    highlight: true
   },
   '07/01': {
     content: (
@@ -315,7 +321,8 @@ let entries = {
         hobby is centering <code>div</code>s" kind of thing), which I can't
         decide is concerning or amusing.
       </p>
-    )
+    ),
+    highlight: true
   },
   '07/02': {
     content: (
@@ -368,7 +375,8 @@ let entries = {
           basically replicated in the song I recommended yesterday.
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '07/04': {
     content: (
@@ -390,7 +398,8 @@ let entries = {
         . I'd never watched <em>Mean Girls</em> before, so oh my god was it
         fucking hilarious.
       </p>
-    )
+    ),
+    highlight: true
   },
   '07/05': {
     content: (
@@ -458,7 +467,8 @@ let entries = {
           regret is in play again.
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '07/08': {
     content: (
@@ -487,7 +497,8 @@ let entries = {
           <p>I can't have it, I can't have it any other way</p>
         </blockquote>
       </>
-    )
+    ),
+    highlight: true
   },
   '07/09': {
     content: (
@@ -520,7 +531,8 @@ let entries = {
           of coffee is not doing anything for me.
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '07/10': {
     content: (
@@ -536,7 +548,8 @@ let entries = {
           so doing super great. Also lots of merch. That's it.
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '07/11': {
     content: (
@@ -564,7 +577,8 @@ let entries = {
           received in the mail anyways.
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '07/12': {
     content: (
@@ -634,7 +648,8 @@ let entries = {
           organizations but Draper genuinely seems like a nice place to work at.
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '07/22': {
     content: (
@@ -725,7 +740,8 @@ let entries = {
           . Best food I've ever tasted, although the final tab was $350...
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '07/24 - 07/25': {
     content: <p>Your usual: seminars and such!</p>
@@ -765,7 +781,8 @@ let entries = {
           I should "be prepared".
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '07/29': {
     content: (
@@ -782,7 +799,8 @@ let entries = {
           position before the OuterLAN folks had even turned the lights out.
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '07/30': {
     content: (
@@ -824,7 +842,8 @@ let entries = {
           it was near the end of Outernet.
         </p>
       </>
-    )
+    ),
+    highlight: true
   },
   '07/31': {
     content: (
@@ -878,6 +897,91 @@ let entries = {
         </p>
       </>
     )
+  },
+  '08/04': {
+    content: (
+      <>
+        <p>
+          Caught up on a bunch of code for BWSI, somehow managed to get the code
+          working (partially) for lane detection and{' '}
+          <a
+            href="https://docs.wpilib.org/en/stable/docs/software/vision-processing/apriltag/apriltag-intro.html"
+            target="_blank">
+            AprilTags
+          </a>
+          !
+        </p>
+        <p>Promptly went home and slept 11 hours. I know, insane.</p>
+      </>
+    )
+  },
+  '08/05': {
+    content: (
+      <>
+        <p>Demo day! Super stressful because we weren't allow</p>
+        <p>
+          Bonetown Burgers are delicious. Highly recommend. Went out for a run
+          again afterwards, and Fenway was having a game again, which is
+          occurring way too often for it to be a coincidence.
+        </p>
+      </>
+    )
+  },
+  '08/06': {
+    content: (
+      <>
+        <p>
+          Today was virtual demo day! A bunch of us gathered at someone's
+          apartment at{' '}
+          <a href="https://www.twenty20cambridge.com/" target="_blank">
+            Twenty20
+          </a>{' '}
+          in Cambridge, which is just crazy. Never been inside a luxury
+          apartment before, but there's a pool, a gym, a basketball court,
+          multiple lounges, and a penthouse on the 20th floor. Went up to the
+          penthouse alone and wanted to take a picture like{' '}
+          <a
+            href="https://avatars.githubusercontent.com/u/72895?v=4"
+            target="_blank">
+            George Hotz
+          </a>{' '}
+          (but safer) but there was someone sunbathing, so I decided against it.
+          Still: so cool! I could see the Bunker Hill Bridge and all of Boston,
+          a bittersweet reminder that my time here in Boston is drawing to a
+          close.
+        </p>
+        <p>
+          Since it was virtual, none of us actually ended up watching the demos.
+          Some of us were playing pool, hanging out on the balcony. We went to
+          get Blaze Pizza down the street (I ate a whole Meat Lovers pizza,
+          which they forgot to charge me for!)
+        </p>
+        <p>
+          Eventually had to say goodbye to everyone, although we all joked that
+          if we collectively got into MIT we would see each other again.
+        </p>
+      </>
+    ),
+    highlight: true
+  },
+  '08/07': {
+    content: (
+      <>
+        <p>
+          Welp, it's the end of an era. This summer was amazing, but I'm getting
+          this vibe that we're in a new era now. Everybody's back home - I'm
+          going to be crashing at someone's home until I find my own - but it's
+          so bittersweet. It's the start of a new adventure, I guess!
+        </p>
+        <p>
+          I have a lot of stuff I want to do, but I think I'll primarily focus
+          on prioritizing stuff that I actually need to get done, and stop
+          editing this website to have it remain a artifact of sorts that I can
+          look back on.
+        </p>
+      </>
+    ),
+    highlight: true
   }
 }
 
@@ -886,16 +990,21 @@ Object.keys(entries).map(date => {
 })
 
 export function TimelineWrapper({ entries }) {
-  const scrollRef = useRef(null)
-  const drag = useDragControls()
+  const [scope, animate] = useAnimate()
+
+  const handleDragEnd = (event, info) => {
+    const offset = info.offset.x
+    const velocity = info.velocity.x
+    animate(scope.current, { x: '-100px' }, { duration: 0.2 })
+  }
 
   return (
-    <div
-      onPointerDrag={event => drag.start(event)}
+    <motion.div
       className={styles.timeline}
-      ref={scrollRef}>
+      transition={{ type: 'spring', stiffness: 600, damping: 30 }}>
       {entries}
-    </div>
+      <motion.div drag="x" onDragEnd={handleDragEnd} ref={scope} />
+    </motion.div>
   )
 }
 
@@ -956,18 +1065,30 @@ export function Modal({ setModal }) {
 
 export default function Timeline() {
   const [modal, setModal] = useState(false)
+  const [highlights, setHighlights] = useState(false)
 
   return (
     <div className={styles.container}>
+      <marquee>
+        <button onClick={() => setHighlights(!highlights)}>
+          Show {highlights ? 'all' : 'highlights of the summer'}
+        </button>
+      </marquee>
       <TimelineWrapper
         entries={Object.keys(entries)
+          .filter(entry => (highlights ? entries[entry].highlight : true))
           .sort((a, b) => Date(a.split(' - ')[0]) - Date(b.split(' - ')[0]))
           .map(date => (
             <div
               key={date}
               className={styles.info}
-              style={{ backgroundColor: entries[date].color }}>
-              <h2>{date}</h2>
+              style={{
+                backgroundColor: entries[date].color
+              }}>
+              <h2>
+                {entries[date].highlight === true && 'highlight: '}
+                {date}
+              </h2>
               {entries[date].content}
             </div>
           ))}
