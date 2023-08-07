@@ -918,7 +918,13 @@ let entries = {
   '08/05': {
     content: (
       <>
-        <p>Demo day! Super stressful because we weren't allow</p>
+        <p>
+          Demo day! Super stressful because we weren't allowed to actually demo
+          the robots underwater in real time? Really frustrating but we worked
+          with it. Could have been worse. Apparently the radar program had their
+          signals jammed two days before the end of the program due to the
+          installation of new 5GHz routers and had to completely reorient.
+        </p>
         <p>
           Bonetown Burgers are delicious. Highly recommend. Went out for a run
           again afterwards, and Fenway was having a game again, which is
