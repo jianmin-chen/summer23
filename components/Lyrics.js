@@ -12,7 +12,7 @@ export default function Lyrics({ lyrics, background, embed, ...props }) {
       }}>
       <div className={styles.content}>
         {lyrics.map((lyric, idx) => (
-          <p>{lyric}</p>
+          <p key={idx}>{lyric}</p>
         ))}
         {embed !== undefined && embed}
       </div>

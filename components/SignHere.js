@@ -97,7 +97,7 @@ export default function New({ signs = [], side = 'left' }) {
           key={idx}
           style={{
             transform: `rotate(${rotate(-5, 5)}deg)`,
-            margin: side === 'left' ? `-${random(-50, 50)}px` : '0 10px 0 0'
+            margin: `-${random(-50, 50)}px -${random(-20, 20)}px`
           }}>
           <p>{note.sign}</p>
           <p className={styles.name}>- {note.user}</p>

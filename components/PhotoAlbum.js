@@ -5,9 +5,10 @@ import { rotate, random } from '@/utils'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
-// I know how to make this more
-
-const defaultPhotos = new Array(62).fill(0)
+const defaultPhotos = new Array(52)
+  .fill(0)
+  .map((_, i) => i)
+  .sort((a, b) => Math.random() - 0.5)
 
 export function Album({ photos, options, setModal }) {
   const { width, height, ref } = useResizeDetector()
@@ -15,14 +16,15 @@ export function Album({ photos, options, setModal }) {
   return (
     <div className={styles.container}>
       <motion.div className={styles.inner} ref={ref}>
-        {photos.map((_, i) => (
+        {photos.map(i => (
           <motion.img
             loading="lazy"
             key={i}
             drag
-            src={`https://pub-89101da5a5544ab78e0d8784ec0d65ae.r2.dev/jc${
+            src={`https://pub-89101da5a5544ab78e0d8784ec0d65ae.r2.dev/${
               i + 1
             }.jpg`}
+            alt={i + 1}
             className={styles.polaroid}
             style={{
               top: `${random(0, height)}px`,

@@ -45,7 +45,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/0JzXOFasHsqh3lvm8wIAGi?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -80,7 +80,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/3i5qVV8azKqGFK4Gzdt5YS?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -122,7 +122,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/0ffR94ZvwbnvyVrjdV4Ckj?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -152,7 +152,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/44KWbTVZev3SWdv1t5UoYE?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -179,7 +179,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/2V65y3PX4DkRhy1djlxd9p?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -201,7 +201,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/60eOMEt3WNVX1m1jmApmnX?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -209,7 +209,7 @@ export default function Index({ name, signs }) {
           />
           <SignHere
             side="left"
-            signs={signs.slice(Math.floor(signs.length / 2))}
+            signs={signs.slice(0, Math.ceil(signs.length / 2))}
           />
         </div>
         <ResizeContext.Provider value={{ width, height }}>
@@ -264,11 +264,6 @@ export default function Index({ name, signs }) {
                 thinking about a summer almost gone.
               </p>
               <PhotoAlbum />
-              <p style={{ fontWeight: 700 }}>
-                please share photos of me/with me that you might have! trying to
-                add more because you might potentially have more and i want them
-                so bad.
-              </p>
               <p>
                 i wrote these words almost everyday (although it fell off
                 considerably towards the end), and i'm glad i did, because it
@@ -352,13 +347,35 @@ export default function Index({ name, signs }) {
                       twitchchess
                     </a>
                   </li>
-
                   <li>
                     <a
                       className="special"
                       href="https://leebyron.com/4000/"
                       target="_blank">
                       four thousand weeks
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="special"
+                      href="https://www.goodreads.com/book/show/13538873-mr-penumbra-s-24-hour-bookstore"
+                      target="_blank">
+                      mr. penumbra's 24 hour bookstore
+                    </a>{' '}
+                    &{' '}
+                    <a
+                      className="special"
+                      href="https://www.goodreads.com/book/show/33916024-sourdough"
+                      target="_blank">
+                      sourdough
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="special"
+                      href="https://www.goodreads.com/book/show/8477057-daytripper"
+                      target="_blank">
+                      daytripper
                     </a>
                   </li>
                 </ul>
@@ -670,12 +687,11 @@ export default function Index({ name, signs }) {
                     </li>
                     <li>imagine if i shaved all of my hair as a bet</li>
                     <li>roof hopping</li>
-                    <li>septum piercing. i want one but also not really</li>
                     <li>
                       artists on a tote bag: taylor swift, conan gray, gracie
                       abrams, dominic fike, pale waves, baby queen, lorde, nf,
-                      the chainsmokers, reneé rapp, fletcher, the last dinner
-                      party, charli xcx, eden (in that order)
+                      the chainsmokers, reneé rapp, melanie martinez, fletcher,
+                      the last dinner party, charli xcx, eden (in that order)
                     </li>
                   </ul>
                 </details>
@@ -1066,12 +1082,12 @@ export default function Index({ name, signs }) {
                   className="special">
                   another dimension
                 </a>{' '}
-                i promise you that we’re platonic or romantic soulmates, if we
-                aren't in this one. so tell me about you. what’d you do this
-                summer? and if you ever want to talk: email for my phone number
-                at jianmin[zero]chen[at]gmail.com. you're amazing.{' '}
+                i promise you that we’re soulmates of some kind, if we aren't in
+                this one. so tell me about you. what’d you do this summer? and
+                if you ever want to talk: email for my phone number at
+                jianmin[zero]chen[at]gmail.com. you're amazing.{' '}
                 <a
-                  href="https://open.spotify.com/playlist/6uhtHYR2R3ZQNXIbYdpbYk?si=9ad19b74f0c74e6a"
+                  href="https://open.spotify.com/playlist/2DLHicPxIynUR2XxWVQpyW?si=e73d4793f7e74e63"
                   target="_blank"
                   className="special">
                   here's to the next era, alrighty?
@@ -1105,13 +1121,6 @@ export default function Index({ name, signs }) {
                 supabase
               </a>
               , and ❤️. fonts:{' '}
-              <a
-                href="https://fonts.google.com/specimen/Lora"
-                target="_blank"
-                className="special">
-                lora
-              </a>
-              ,{' '}
               <a
                 href="https://fonts.google.com/specimen/EB+Garamond"
                 target="_blank"
@@ -1193,7 +1202,6 @@ export default function Index({ name, signs }) {
                 source
               </a>
             </footer>
-            <SignHere side="center" />
           </div>
         </ResizeContext.Provider>
         <div>
@@ -1225,7 +1233,7 @@ export default function Index({ name, signs }) {
                 width="100%"
                 height="152"
                 frameBorder="0"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1253,7 +1261,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/35IcAVSMsU9qzHfpPbvC8A?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1268,7 +1276,7 @@ export default function Index({ name, signs }) {
               "That's when I saw somebody crying",
               'I said, "Why are you upset?"',
               'She said "Well nothing makes sense"',
-              'I said, "Hey don\'t be defeatist"',
+              'I said, "Hey don\'t be so defeatist"',
               "She said, \"Well don't be so naive it's been proven space is",
               'Exponential so this is all inconsequential"',
               'I said, "If it\'s inconsequential then there is infinite potential"',
@@ -1284,7 +1292,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/2Tuaa6mlnDZ7vJhtdQ8ZSw?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1312,7 +1320,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/6iWEhoALoBFnQMNVhYY0Sc?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1340,7 +1348,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/7BKLCZ1jbUBVqRi2FVlTVw?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1368,7 +1376,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/15vzANxN8G9wWfwAJLLMCg?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1395,7 +1403,7 @@ export default function Index({ name, signs }) {
                 src="https://open.spotify.com/embed/track/1rIKgCH4H52lrvDcz50hS8?utm_source=generator"
                 width="100%"
                 height="152"
-                allowFullscreen=""
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
@@ -1403,7 +1411,7 @@ export default function Index({ name, signs }) {
           />
           <SignHere
             side="right"
-            signs={signs.slice(0, Math.floor(signs.length / 2))}
+            signs={signs.slice(Math.ceil(signs.length / 2))}
           />
         </div>
       </div>
